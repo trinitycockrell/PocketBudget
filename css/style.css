@@ -1,0 +1,86 @@
+/* ==========
+    CSS Reset
+    ========== */
+
+    /* * is the universal selector, it selects all elements on the page */
+*{
+    /* margin is 0 because the browser automatically puts space around things, we don't want that*/
+    margin: 0;
+    /* Padding is space inside an element, we'll add our own padding later, so we set it to 0 here */
+    padding: 0;
+    /* box-sizing:border-box the width stays 200px */
+    box-sizing: border-box;
+}
+/*=======
+   BODY
+   =======*/
+body{
+    /* font-family is the font imported from Google Fonts, now we're telling the browser to use that font*/
+    font-family:"Nunito", sans-serif;
+    /* background changes the background of the whole page, obviously*/
+    background:#fff8fc;
+    /* color changes the color of the text on the page*/
+    color:#6d5c7a;
+    /* min-height is the minimum height of the page, vh stands for viewport height so 100vh means 100% of the viewport height */
+    min-height:100vh;
+}
+/*=========
+    LINKS
+===========*/
+a{
+
+    /* text-decoration:none removes the underline from links */
+    text-decoration:none;
+
+    /* color:inherit instead of making links blue, they use whatever color their parent has */
+    color:inherit;
+}
+/*=============
+    CONTAINER
+=============*/
+.container{
+    /*display:flex makes the container a flexbox, which is a way to layout elements in a row or column */
+    display:flex;
+
+    min-height:100vh;
+}
+/*===========
+SIDEBAR
+============*/
+.sidebar{
+    /* width:250px makes it 250 pixels wide */
+    width: 250px;
+
+    /*Soft Pastel Pink*/
+    background:#FDE9F3;
+
+    /* padding:30px instead of text touching the edge, everything gets breathing room */
+    padding: 30px;
+}
+/*=========
+LOGO
+========*/
+.logo{
+    font-family:"Fredoka", sans-serif;
+
+    /* font-size:2rem, rem is a responsive measurement*/
+    font-size: 2rem;
+    font-weight: 600;
+
+    /*margin-bottom adds 40px under the logo, making space between anything below it */
+    margin-bottom: 40px;
+}
+/*===========
+NAVIGATION
+============*/
+nav{
+    /* By default Flexbox goes left to right, we dont want that so we did flex-direction:column*/
+    display:flex;
+
+    /* Changes it to top to bottom, which is perfect for menus*/
+    flex-direction:column;
+
+    /* Instead of manually adding margins, flexbox can automatically space items*/
+    gap:15px;
+
+}
