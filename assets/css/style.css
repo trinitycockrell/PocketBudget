@@ -11,6 +11,17 @@
     /* box-sizing:border-box the width stays 200px */
     box-sizing: border-box;
 }
+/*==========
+COLOR SYSTEM
+===========*/  
+:root{
+    --background:#fff8fc;
+    --sidebar:#fde9f3;
+    --card:#ffffff;
+    --pink:#f9c5d5;
+    --purple:#8a76a8;
+    --text:#6d5c7a;
+}  
 /*=======
    BODY
    =======*/
@@ -18,9 +29,9 @@ body{
     /* font-family is the font imported from Google Fonts, now we're telling the browser to use that font*/
     font-family:"Nunito", sans-serif;
     /* background changes the background of the whole page, obviously*/
-    background:#fff8fc;
+    background:var(--background);
     /* color changes the color of the text on the page*/
-    color:#6d5c7a;
+    color:var(--text);
     /* min-height is the minimum height of the page, vh stands for viewport height so 100vh means 100% of the viewport height */
     min-height:100vh;
 }
@@ -53,7 +64,7 @@ SIDEBAR
     min-height:100vh;
 
     /*Soft Pastel Pink*/
-    background:#FDE9F3;
+    background:var(--sidebar);
 
     /* padding:30px instead of text touching the edge, everything gets breathing room */
     padding: 30px;
@@ -96,7 +107,7 @@ nav{
 }
 .dashboard-header p{
     margin-top: 10px;
-    color: #8b7b94;
+    background:var(--purple);
 }
 .cards{
     display:flex;
@@ -105,10 +116,10 @@ nav{
 }
 .card{
     flex:1;
-    background:white;
+    background:var(--card);
     padding:20px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);]
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
 .card h2{
@@ -128,7 +139,7 @@ DASHBOARD GRID
     gap:20px;
 }
 .panel{
-    background:white;
+    background:var(--card);
     padding:25px;
     border-radius:20px;
     box-shadow:0 8px 20px rgba(0,0,0,.06);
@@ -149,7 +160,7 @@ DASHBOARD GRID
 }
 .panel h2{
     font-family:"Fredoka", sans-serif;
-    color:#8A76A8;
+    color:var(--purple);
     margin-bottom:20px;
 }
 .transaction{
@@ -171,6 +182,6 @@ DASHBOARD GRID
 .progress{
     width:35%;
     height:100%;
-    background:#F9C5D5;
+    background:var(--pink);
     border-radius:20px;
 }

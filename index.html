@@ -1,148 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Allows emojis and special characters -->
-        <meta charset="UTF-8">
+<head>
 
-        <!-- Makes the website responsive -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Allows emojis and special characters -->
+    <meta charset="UTF-8">
 
-        <!-- Browser tab title -->
-        <title>Pocket Budget</title>
+    <!-- Makes website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!-- Google Font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- Browser tab title -->
+    <title>Pocket Budget</title>
 
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <body>
 
-        <div class="container">
-        
-        <div class="sidebar">
-            <div class="logo">
-                Pocket Budget
-            </div>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            <nav>
-                <!-- <a> is an anchor tag which creates links-->
-                <a href="index.html"> Dashboard</a>
-                <a href="#im"> Transactions</a>
-                <a href="#"> Budgets</a>
-                <a href="#"> Bills</a>
-                <a href="#"> Savings Goals</a>
-                <a href="#"> Reports</a>
-                <a href="#"> Settings</a>
-            </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
-            <main class="main-content">
-                <header class="dashboard-header">
-                    <h1>Welcome Back, Trinity</h1>
-                    <p>Let's manage your money </p>
-                </header>
-                <section class="cards">
-                    <div class="card">
-                        <h2>Total Balance</h2>
-                        <p>$0.00</p>
-                    </div>
-                    <div class="card">
-                        <h2>Income</h2>
-                        <p>$0.00</p>
-                    </div>
-                    <div class="card">
-                        <h2>Expenses</h2>
-                        <p>$0.00</p>
-                    </div>
-                    <div class="card">
-                        <h2>Savings</h2>
-                        <p>$0.00</p>
-                    </div>
-                </section>
-                <section class="dashboard-grid">
-                    <div class="panel transaction">
-                        <h2>📋 Recent Transactions</h2>
-                        <ul>
-                            <li>☕ Starbucks <span>-$7.50</span></li>
+</head>
 
-                            <li>💰 Paycheck <span>+$850.00</span></li>
 
-                            <li>🛍️ Target <span>-$43.20</span></li>
+<body>
 
-                            <li>🎮 Steam <span>-$19.99</span></li></li>
-                        </ul>
-                    </div>
-                    <div class="panel bills">
-                        <h2>📅 Upcoming Bills</h2>
-                        <ul>
-                            <li>Netflix</li>
-                            <li>Apple Music</li>
-                            <li>Phone Bill</li>
-                            <li>Electric</li>
-                        </ul>
-                    </div>
 
-                    <div class="panel goals">
-                        <h2>🐰 Savings Goal</h2>
-                        <p> Gaming Setup</p>
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <p> $350 / $1000</p>
-                    </div>
-                    <div class="panel chart">
-                        <h2> Spending Breakdown</h2>
-                        <p>Chart Coming Soon!</p>
-                    </div>
-                </section>
+<div class="container">
 
-            </main>
-            </div>
 
-        <main>
-            <header>
-                <div class="welcome">
-                    <!-- <h1> is a heading tag, the biggest one-->
-                    <h1> Hello, Trinity! </h1>
-                    <!-- <p> is a paragraph tag, normal text-->
-                    <p> Let's make today another great money day.</p>
-                </div>
-                <div class="search">
-                    <!-- instead of typing search... by myself, placeholder makes the browser display it automatically -->
-                    <input
-                    type="text"
-                    placeholder="Search...">
-                </div>
-            </header>
-                <section class="cards">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
 
-                    <div class="card">
-                        <h3> Current Balance</h3>
-                        <p> $0.00</p>
-                    </div>
-                     <div class="card">
-                        <h3> Income</h3>
-                        <p> $0.00</p>
-                    </div>
-                     <div class="card">
-                        <h3> Expenses</h3>
-                        <p> $0.00</p>
-                    </div>
-                     <div class="card">
-                        <h3> Remaining</h3>
-                        <p> $0.00</p>
-                    </div>
 
-                </section>
-
-        </main>
+        <div class="logo">
+            Pocket Budget 🐰
         </div>
 
-      
-    </body>
+
+        <nav>
+
+            <a href="#">🏠 Dashboard</a>
+
+            <a href="#">💳 Transactions</a>
+
+            <a href="#">🌸 Budgets</a>
+
+            <a href="#">📅 Bills</a>
+
+            <a href="#">🐰 Savings Goals</a>
+
+            <a href="#">📊 Reports</a>
+
+            <a href="#">⚙️ Settings</a>
+
+        </nav>
+
+
+    </aside>
+
+
+
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <div class="welcome">
+                <h1>Welcome Back, Trinity 🌸 </h1>
+                <p>Let's manage your money today.</p>
+            </div>
+
+
+
+            <!-- Search bar will be styled in Lesson 5 -->
+            <div class="search">
+                <input 
+                type="text"
+                placeholder="Search transactions...">
+
+            </div>
+
+
+
+        </header>
+
+
+
+
+
+        <!-- Bunny Card will be added here -->
+        <section class="mascot-placeholder">
+
+            <!-- Future bunny mascot -->
+
+        </section>
+
+        <!-- MONEY CARDS -->
+        <section class="cards">
+
+            <div class="card">
+                <h2> Total Balance </h2>
+                <p>$0.00</p>
+            </div>
+
+            <div class="card">
+                <h2> Income </h2>
+                <p>$0.00</p>
+            </div>
+
+            <div class="card">
+                <h2>Expenses </h2>
+                <p> $0.00 </p>
+            </div>
+
+            <div class="card">
+                <h2>Savings</h2>
+                <p>$0.00 </p>
+            </div>
+
+
+        </section>
+
+
+        <!-- DASHBOARD SECTIONS -->
+        <section class="dashboard-grid">
+
+             <!-- Transactions -->
+            <div class="panel transaction">
+                <h2>📋 Recent Transactions</h2>
+                <ul>
+                    <li>☕ Starbucks<span>-$7.50</span></li>
+                    <li>💰 Paycheck<span>+$850.00</span></li>
+                    <li>🛍️ Target<span>-$43.20</span></li>
+                    <li>🎮 Steam<span>-$19.99 </span> </li>
+                </ul>
+            </div>
+
+            <!-- Bills -->
+            <div class="panel bills">
+                <h2>📅 Upcoming Bills</h2>
+                <ul>
+                    <li>Netflix</li>
+                    <li>Apple Music</li>
+                    <li>Phone Bill</li>
+                    <li>Electric</li>
+                </ul>
+            </div>
+
+            <!-- Savings Goal -->
+            <div class="panel goals">
+
+
+                <h2>🐰 Savings Goal</h2>
+                <p>  Gaming Setup</p>
+
+                <div class="progress-bar">
+                    <div class="progress">
+                </div>
+                    </div>
+
+                <p>$350 / $1000 </p>
+            </div>
+
+            <!-- Chart -->
+            <div class="panel chart">
+                <h2>📈 Spending Breakdown</h2>
+                <p>Chart Coming Soon!</p>
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+</div>
+
+
+</body>
+
 </html>
