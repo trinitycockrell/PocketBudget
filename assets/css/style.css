@@ -1,0 +1,176 @@
+/* ==========
+    CSS Reset
+    ========== */
+
+    /* * is the universal selector, it selects all elements on the page */
+*{
+    /* margin is 0 because the browser automatically puts space around things, we don't want that*/
+    margin: 0;
+    /* Padding is space inside an element, we'll add our own padding later, so we set it to 0 here */
+    padding: 0;
+    /* box-sizing:border-box the width stays 200px */
+    box-sizing: border-box;
+}
+/*=======
+   BODY
+   =======*/
+body{
+    /* font-family is the font imported from Google Fonts, now we're telling the browser to use that font*/
+    font-family:"Nunito", sans-serif;
+    /* background changes the background of the whole page, obviously*/
+    background:#fff8fc;
+    /* color changes the color of the text on the page*/
+    color:#6d5c7a;
+    /* min-height is the minimum height of the page, vh stands for viewport height so 100vh means 100% of the viewport height */
+    min-height:100vh;
+}
+/*=========
+    LINKS
+===========*/
+a{
+
+    /* text-decoration:none removes the underline from links */
+    text-decoration:none;
+
+    /* color:inherit instead of making links blue, they use whatever color their parent has */
+    color:inherit;
+}
+/*=============
+    CONTAINER
+=============*/
+.container{
+    /*display:flex makes the container a flexbox, which is a way to layout elements in a row or column */
+    display:flex;
+    flex-direction:row;
+    min-height:100vh;
+}
+/*===========
+SIDEBAR
+============*/
+.sidebar{
+    /* width:250px makes it 250 pixels wide */
+    width: 250px;
+    min-height:100vh;
+
+    /*Soft Pastel Pink*/
+    background:#FDE9F3;
+
+    /* padding:30px instead of text touching the edge, everything gets breathing room */
+    padding: 30px;
+}
+/*=========
+LOGO
+========*/
+.logo{
+    font-family:"Fredoka", sans-serif;
+
+    /* font-size:2rem, rem is a responsive measurement*/
+    font-size: 2rem;
+    font-weight: 600;
+
+    /*margin-bottom adds 40px under the logo, making space between anything below it */
+    margin-bottom: 40px;
+}
+/*===========
+NAVIGATION
+============*/
+nav{
+    /* By default Flexbox goes left to right, we dont want that so we did flex-direction:column*/
+    display:flex;
+
+    /* Changes it to top to bottom, which is perfect for menus*/
+    flex-direction:column;
+
+    /* Instead of manually adding margins, flexbox can automatically space items*/
+    gap:15px;
+}
+.main-content{
+    flex: 1;
+    padding: 40px;
+}
+.dashboard-header{
+    margin-bottom: 40px;
+}
+.dashboard-header h1{
+    font-size: 2rem;
+}
+.dashboard-header p{
+    margin-top: 10px;
+    color: #8b7b94;
+}
+.cards{
+    display:flex;
+    gap:20px;
+    margin-bottom:40px;
+}
+.card{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);]
+}
+
+.card h2{
+    font-size:1rem;
+    margin-bottom:15px;
+}
+.card p{
+    font-size:2rem;
+    font-weight:bold;
+}
+/*=============
+DASHBOARD GRID
+==============*/
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+.panel{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    transition:.3s;
+}
+.panel:hover{
+    transform:translateY(-5px);
+}
+.panel ul{
+    list-style:none;
+    margin-top:20px;
+}
+.panel li{
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #F2E8F5;
+}
+.panel h2{
+    font-family:"Fredoka", sans-serif;
+    color:#8A76A8;
+    margin-bottom:20px;
+}
+.transaction{
+    grid-column:1;
+}
+.goals{
+    grid-column:1;
+}
+.chart{
+    grid-column:2;
+}
+.progress-bar{
+    width:100%;
+    height:18px;
+    background:#F7EDF7;
+    border-radius:20px;
+    margin:20px 0;
+}
+.progress{
+    width:35%;
+    height:100%;
+    background:#F9C5D5;
+    border-radius:20px;
+}
