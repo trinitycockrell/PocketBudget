@@ -18,9 +18,17 @@ COLOR SYSTEM
     --background:#fff8fc;
     --sidebar:#fde9f3;
     --card:#ffffff;
+
     --pink:#f9c5d5;
+    --light-pink:#FFEFF6;
+
     --purple:#8a76a8;
+    --light-purple:#EEDCF7;
+
     --text:#6d5c7a;
+    --light-text:#8B7B94;
+
+    --shadow:0 8px 20px rgba(0,0,0,.08);
 }  
 /*=======
    BODY
@@ -69,18 +77,48 @@ SIDEBAR
     /* padding:30px instead of text touching the edge, everything gets breathing room */
     padding: 30px;
 }
+.search input{
+    width:280px;
+    padding:12px 18px;
+
+    border:none;
+    border-radius:30px;
+
+    background:var(--card);
+    box-shadow:var(--shadow);
+
+    font-family:"Nunito", sans-serif;
+    font-size:1rem;
+    color:var(--text);
+
+    outline:none;
+    transition:.3s;
+}
+.search input:focus{
+    box-shadow:0 0 0 4px rgba(249, 197, 213, .4);
+}
 /*=========
 LOGO
 ========*/
 .logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:45px;
+    padding-bottom:20px;
+    border-bottom:2px solid rgba(138, 118, 168, .15);
+}
+.logo-image{
+    width:85px;
+    height:85px;
+    object-fit:contain;
+}
+.logo h2{
     font-family:"Fredoka", sans-serif;
-
-    /* font-size:2rem, rem is a responsive measurement*/
-    font-size: 2rem;
-    font-weight: 600;
-
-    /*margin-bottom adds 40px under the logo, making space between anything below it */
-    margin-bottom: 40px;
+    font-size:1.7rem;
+    font-weight:700;
+    line-height:1.1;
+    color:var(--purple);
 }
 /*===========
 NAVIGATION
@@ -107,7 +145,7 @@ nav{
 }
 .dashboard-header p{
     margin-top: 10px;
-    background:var(--purple);
+    color: var(--purple);
 }
 .cards{
     display:flex;
@@ -138,6 +176,12 @@ DASHBOARD GRID
     grid-template-columns:2fr 1fr;
     gap:20px;
 }
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
 .panel{
     background:var(--card);
     padding:25px;
@@ -156,7 +200,7 @@ DASHBOARD GRID
     display:flex;
     justify-content:space-between;
     padding:12px 0;
-    border-bottom:1px solid #F2E8F5;
+    border-bottom:1px solid var(--light-purple);
 }
 .panel h2{
     font-family:"Fredoka", sans-serif;
@@ -175,7 +219,7 @@ DASHBOARD GRID
 .progress-bar{
     width:100%;
     height:18px;
-    background:#F7EDF7;
+    background:var(--light-purple);
     border-radius:20px;
     margin:20px 0;
 }
@@ -184,4 +228,34 @@ DASHBOARD GRID
     height:100%;
     background:var(--pink);
     border-radius:20px;
+}
+/*=================
+BUNNY MASCOT CARD
+==================*/
+.mascot-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--light-pink),
+        var(--light-purple)
+    );
+    padding:30px;
+    border-radius:25px;
+    margin-bottom:35px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+.mascot-text h2{
+    font-family:"Fredoka", sans-serif;
+    color:var(--purple);
+    margin-bottom:12px;
+}
+.mascot-text p{
+    max-width:500px;
+    line-height:1.6;
+}
+.bunny{
+    font-size:5rem;
 }
