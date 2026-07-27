@@ -1,0 +1,119 @@
+/* ==========
+    CSS Reset
+    ========== */
+
+    /* * is the universal selector, it selects all elements on the page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*==========
+COLOR SYSTEM
+===========*/  
+:root{
+    --background:#fff8fc;
+    --sidebar:#fde9f3;
+    --card:#ffffff;
+
+    --pink:#f9c5d5;
+    --light-pink:#FFEFF6;
+
+    --purple:#8a76a8;
+    --light-purple:#EEDCF7;
+
+    --text:#6d5c7a;
+    --light-text:#8B7B94;
+
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+}  
+/*=======
+   BODY
+   =======*/
+body{
+    font-family:"Nunito", sans-serif;
+    background:var(--background);
+    color:var(--text);
+    min-height:100vh;
+}
+.transaction-toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+.add-btn{
+    background:var(--pink);
+    color:var(--text);
+    border:none;
+    border-radius:16px;
+    padding:12px 20px;
+    font-family:"Nunito", sans-serif;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+.add-btn:hover{
+    background:var(--light-purple);
+    transform:translateY(-2px);
+    box-shadow:var(--shadow);
+}
+.filters{
+    display:flex;
+    gap:12px;
+}
+.filters button{
+    background:var(--card);
+
+    border:none;
+    border-radius:14px;
+    padding:10px 16px;
+
+    cursor:pointer;
+
+    font-family:"Nunito", sans-serif;
+
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+.filters button:hover{
+    background:var(--pink);
+}
+.transaction-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.transaction-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:var(--card);
+
+    padding:20px;
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+.transaction-item:hover{
+    transform:translateY(-4px);
+}
+.transaction-info h3{
+    margin-bottom:8px;
+    color:var(--purple);
+}
+.transaction-info p{
+    color:var(--light-text);
+}
+.income{
+    color:#4CAF50;
+    font-weight:bold;
+    font-size:1.2rem;
+}
+.expense{
+    color:#E57373;
+    font-weight:bold;
+    font-size:1.2rem;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Allows emojis and special characters -->
+    <meta charset="UTF-8">
+
+    <!-- Makes website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>Pocket Budget</title>
+
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/transactions.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="assets/images/PocketBudgetLogo.png" alt="Pocket Budget Logo" class="logo-image">
+
+            <h2> Pocket Budget </h2>
+        </div>
+
+        <nav>
+
+            <a href="index.html">🏠 Dashboard</a>
+
+            <a href="transaction.html">💳 Transactions</a>
+
+            <a href="budgets.html">🌸 Budgets</a>
+
+            <a href="bills.html">📅 Bills</a>
+
+            <a href="goals.html">🐰 Savings Goals</a>
+
+            <a href="report.html">📊 Reports</a>
+
+            <a href="settings.html">⚙️ Settings</a>
+
+        </nav>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- HEADER -->
+        <header class="dashboard-header">
+
+            <div class="welcome">
+                <h1>Transactions 💳</h1>
+                <p>Track every dollar coming in and going out.</p>
+            </div>
+
+            <!-- Search bar will be styled in Lesson 5 -->
+            <div class="search">
+                <input 
+                type="text"
+                placeholder="Search transactions...">
+
+            </div>
+
+
+
+        </header>
+
+        <section class="transaction-toolbar">
+
+            <button class="add-btn">
+                + Add Transaction
+            </button>
+
+            <div class="filters">
+                <button> All </button>
+                <button> Income </button>
+                <button> Expenses </button>
+            </div>
+        </section>
+
+        <section class="transaction-list">
+            <div class="transaction-item">
+                <div class="transaction-info">
+                    <h3>☕ Starbucks</h3>
+                    <p>Food & Drinks • Jul 24, 2026</p>
+                </div>
+
+                <div class="amount expense">
+                    -$7.50
+                </div>
+        
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-info">
+                    <h3> 💰 Paycheck</h3>
+                    <p>Income • Jul 23, 2026</p>
+                </div>
+                
+                <div class="amount income">
+                    +$850.00
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-info">
+                    <h3>🎮 Steam</h3>
+                    <p>Entertainment • Jul 20, 2026</p>
+                </div>
+
+                <div class="amount expense">
+                    -$19.99
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
