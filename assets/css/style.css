@@ -97,6 +97,9 @@ SIDEBAR
 .search input:focus{
     box-shadow:0 0 0 4px rgba(249, 197, 213, .4);
 }
+.search input:hover{
+    transform:translateY(-2px);
+}
 /*=========
 LOGO
 ========*/
@@ -131,7 +134,21 @@ nav{
     flex-direction:column;
 
     /* Instead of manually adding margins, flexbox can automatically space items*/
-    gap:15px;
+    gap:12px;
+}
+.nav a{
+    display:flex;
+    align-items:center;
+    padding:14px 18px;
+    border-radius:16px;
+    font-weight:600;
+    transition:.3s;
+}
+.nav a:hover{
+    background:var(--card);
+    color:var(--purple);
+    transform: translateX(8px);
+    box-shadow:var(--shadow);
 }
 .main-content{
     flex: 1;
@@ -147,6 +164,9 @@ nav{
     margin-top: 10px;
     color: var(--purple);
 }
+/*==============
+CARD
+===============*/
 .cards{
     display:flex;
     gap:20px;
@@ -157,9 +177,13 @@ nav{
     background:var(--card);
     padding:20px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:var(--shadow);
+    transition:.3s;
 }
-
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,.10);
+}
 .card h2{
     font-size:1rem;
     margin-bottom:15px;
@@ -182,6 +206,9 @@ DASHBOARD GRID
     align-items:center;
     margin-bottom:40px;
 }
+/*================
+PANEL
+=================*/
 .panel{
     background:var(--card);
     padding:25px;
@@ -207,6 +234,7 @@ DASHBOARD GRID
     color:var(--purple);
     margin-bottom:20px;
 }
+
 .transaction{
     grid-column:1;
 }
@@ -245,7 +273,7 @@ BUNNY MASCOT CARD
     padding:30px;
     border-radius:25px;
     margin-bottom:35px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    box-shadow:var(--shadow);
 }
 .mascot-text h2{
     font-family:"Fredoka", sans-serif;
@@ -258,4 +286,16 @@ BUNNY MASCOT CARD
 }
 .bunny{
     font-size:5rem;
+    animation:float 3s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0);
+    }
 }
