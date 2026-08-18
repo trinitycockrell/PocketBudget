@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Bills | Pocket Budget</title>
+
+    <link rel="stylesheet" href="assets/css/bills.css">
+</head>
+
+<body>
+    <div class="app">
+
+        <aside class="sidebar">
+            <h1 class="logo"> Pocket Budget </h1>
+            <nav class="sidebar-nav">
+                <a href="index.html"> Dashboard</a>
+                <a href="budgets.html"> Budgets</a>
+                <a href="bills.html"> Bills</a>
+                <a href="goals.html"> Goals</a>
+                <a href="transaction.html"> Transactions</a>
+                <a href="report.html"> Reports</a>
+                <a href="settings.html"> Settings</a>
+            </nav>
+            
+        </aside>
+
+        <main class="main-content">
+            <header class="page-header">
+                <div>
+                    <p class="eyebrow"> Stay on top of your payments </p>
+
+                    <h2>My Bills</h2>
+                    <p>Keep track of your upcoming and recurring bills. </p>
+                </div>
+
+                <button class="add-button">+ Add Bill </button>
+            </header>
+
+            <section class="bills-summary">
+                <div class="summary-card">
+                    <p>Total Bills </p>
+                    <h3>$0.00</h3>
+                </div>
+
+                <div class="summary-card">
+                    <p>Paid</p>
+                    <h3>$0.00</h3>
+                </div>
+
+                <div class="summary-card">
+                    <p>Remaining</p>
+                    <h3>$0.00</h3>
+                </div>
+            </section>
+
+            <section class="bills-section">
+                <div class="section-header">
+                    <h2>Upcoming Bills</h2>
+
+                    <button class="filter-button">All Bills</button>
+                </div>
+
+                <div class="bills-list">
+                    <article class="bill-card">
+                        <div class="bill-icon">💳</div>
+
+                        <div class="bill-info">
+                            <h3>Example Bill</h3>
+                            <p>Due: August 20, 2026</p>
+                        </div>
+
+                        <div class="bill-details">
+                            <strong>$0.00</strong>
+                            <span class="bill-status unpaid">
+                                 Unpaid 
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
