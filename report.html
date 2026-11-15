@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | Pocket Budget</title>
+
+    <link rel="stylesheet" href="assets/css/reports.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h1 class="logo">Pocket Budget</h1>
+
+            <nav class="sidebar-nav">
+                <a href="index.html">Dashboard</a>
+                <a href="budgets.html">Budgets</a>
+                <a href="bills.html">Bills</a>
+                <a href="goals.html">Goals</a>
+                <a href="transaction.html">Transactions</a>
+                <a href="report.html" class="active">Reports</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- PAGE HEADER -->
+            <header class="page-header">
+
+                <div>
+                    <p class="eyebrow">YOUR FINANCES</p>
+                    <h2>Reports</h2>
+                    <p>Take a closer look at your spending and saving habits.</p>
+                </div>
+
+                <button class="download-button">Download Report</button>
+
+            </header>
+
+
+            <!-- REPORT FILTER -->
+            <section class="report-filter">
+
+                <div>
+                    <h3>Financial Overview</h3>
+                    <p>Review your financial activity.</p>
+                </div>
+
+                <select name="report-period" id="report-period">
+                    <option value="month">This Month</option>
+                    <option value="last-month">Last Month</option>
+                    <option value="year">This Year</option>
+                </select>
+
+            </section>
+
+
+            <!-- FINANCIAL SUMMARY -->
+            <section class="report-summary">
+
+                <div class="summary-card">
+                    <h3>Total Income</h3>
+                    <h2>$0.00</h2>
+                    <p>Money coming in</p>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Total Expenses</h3>
+                    <h2>$0.00</h2>
+                    <p>Money going out</p>
+                </div>
+
+                <div class="summary-card">
+                    <h3>Total Savings</h3>
+                    <h2>$0.00</h2>
+                    <p>Money saved</p>
+                </div>
+
+            </section>
+
+
+            <!-- SPENDING BREAKDOWN -->
+            <section class="report-section">
+
+                <div class="section-header">
+                    <div>
+                        <h3>Spending Breakdown</h3>
+                        <p>See where your money is going.</p>
+                    </div>
+                </div>
+
+                <div class="spending-content">
+
+                    <div class="spending-placeholder">
+                        <p>Your spending chart will appear here.</p>
+                    </div>
+
+                    <div class="spending-categories">
+
+                        <div class="category-item">
+                            <span class="category-dot"></span>
+                            <p>Food</p>
+                            <span>$0.00</span>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="category-dot"></span>
+                            <p>Bills</p>
+                            <span>$0.00</span>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="category-dot"></span>
+                            <p>Shopping</p>
+                            <span>$0.00</span>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="category-dot"></span>
+                            <p>Entertainment</p>
+                            <span>$0.00</span>
+                        </div>
+
+                        <div class="category-item">
+                            <span class="category-dot"></span>
+                            <p>Other</p>
+                            <span>$0.00</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT ACTIVITY -->
+            <section class="report-section">
+
+                <div class="section-header">
+                    <div>
+                        <h3>Monthly Activity</h3>
+                        <p>A summary of your recent financial activity.</p>
+                    </div>
+                </div>
+
+                <div class="activity-placeholder">
+                    <p>Your monthly activity chart will appear here.</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

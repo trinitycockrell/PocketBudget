@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | Pocket Budget</title>
+
+    <link rel="stylesheet" href="assets/css/settings.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h1 class="logo">Pocket Budget</h1>
+
+            <nav class="sidebar-nav">
+                <a href="index.html">Dashboard</a>
+                <a href="budgets.html">Budgets</a>
+                <a href="bills.html">Bills</a>
+                <a href="goals.html">Goals</a>
+                <a href="transaction.html">Transactions</a>
+                <a href="report.html">Reports</a>
+                <a href="settings.html" class="active">Settings</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- PAGE HEADER -->
+            <header class="page-header">
+
+                <div>
+                    <p class="eyebrow">PERSONALIZE YOUR EXPERIENCE</p>
+                    <h2>Settings</h2>
+                    <p>Manage your account and application preferences.</p>
+                </div>
+
+            </header>
+
+
+            <!-- PROFILE SETTINGS -->
+            <section class="settings-section">
+
+                <div class="section-header">
+                    <h3>Profile Information</h3>
+                    <p>Manage your personal account details.</p>
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="profile-avatar">
+                        <span>👤</span>
+                    </div>
+
+                    <div class="profile-info">
+                        <h4>Profile Details</h4>
+                        <p>Update your name and email address.</p>
+                    </div>
+
+                    <button class="secondary-button">Edit Profile</button>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPEARANCE SETTINGS -->
+            <section class="settings-section">
+
+                <div class="section-header">
+                    <h3>Appearance</h3>
+                    <p>Customize how Pocket Budget looks.</p>
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Theme</h4>
+                        <p>Choose how the application looks.</p>
+                    </div>
+
+                    <select name="theme" id="theme">
+                        <option value="light">Light Mode</option>
+                        <option value="dark">Dark Mode</option>
+                    </select>
+
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Accent Color</h4>
+                        <p>Choose your preferred application color.</p>
+                    </div>
+
+                    <select name="accent-color" id="accent-color">
+                        <option value="pink">Pastel Pink</option>
+                        <option value="purple">Lavender</option>
+                        <option value="blue">Baby Blue</option>
+                        <option value="green">Sage Green</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- CURRENCY SETTINGS -->
+            <section class="settings-section">
+
+                <div class="section-header">
+                    <h3>Financial Preferences</h3>
+                    <p>Customize your financial settings.</p>
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Currency</h4>
+                        <p>Select the currency used throughout the application.</p>
+                    </div>
+
+                    <select name="currency" id="currency">
+                        <option value="USD">USD ($)</option>
+                        <option value="EUR">EUR (€)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="CAD">CAD ($)</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOTIFICATION SETTINGS -->
+            <section class="settings-section">
+
+                <div class="section-header">
+                    <h3>Notifications</h3>
+                    <p>Manage the notifications you receive.</p>
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Bill Reminders</h4>
+                        <p>Receive reminders when bills are approaching.</p>
+                    </div>
+
+                    <label class="toggle">
+                        <input type="checkbox" id="bill-reminders" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Budget Alerts</h4>
+                        <p>Get notified when you're close to reaching a budget limit.</p>
+                    </div>
+
+                    <label class="toggle">
+                        <input type="checkbox" id="budget-alerts" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Goal Reminders</h4>
+                        <p>Receive reminders about your savings goals.</p>
+                    </div>
+
+                    <label class="toggle">
+                        <input type="checkbox" id="goal-reminders" checked>
+                        <span class="slider"></span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECURITY SETTINGS -->
+            <section class="settings-section">
+
+                <div class="section-header">
+                    <h3>Security</h3>
+                    <p>Manage your account security.</p>
+                </div>
+
+                <div class="settings-card">
+
+                    <div class="setting-info">
+                        <h4>Change Password</h4>
+                        <p>Update your account password.</p>
+                    </div>
+
+                    <button class="secondary-button">Change Password</button>
+
+                </div>
+
+            </section>
+
+
+            <!-- SAVE SETTINGS -->
+            <div class="settings-actions">
+
+                <button class="save-button">Save Changes</button>
+                <button class="reset-button">Reset Settings</button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
